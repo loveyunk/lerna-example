@@ -17,7 +17,7 @@ jobs:
       - run: git config user.email "mjjccc@126.com"
       - run: git --version
       - run: npm run new-version
-      - run: git push
+      - run: git push -u origin master
 
 workflows:
   version: 2
