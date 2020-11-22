@@ -13,6 +13,8 @@ jobs:
       - checkout
 
       - run: npm install
+      - run: git config user.name "loveyunk"
+      - run: git config user.email "mjjccc@126.com"
       - run: npm run new-version
 
 workflows:
