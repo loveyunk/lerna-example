@@ -1,12 +1,27 @@
-version: 2.1
-orbs:
-  node: circleci/node@3.0.0
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
 jobs:
-  build:
-    executor: docker-executor
-    steps: 
-      - npm run start
+  build-job:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:10.8.0
+
+    steps:
+      - checkout
+
+      - run: npm run start
+
 workflows:
-  node-tests:
+  version: 2
+
+  -deploy:
     jobs:
-      - build
+      - build-job:
+          requires:
+            - build-job
+          filters:
+            branches:
+              only: master
