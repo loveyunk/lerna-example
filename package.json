@@ -6,7 +6,7 @@
   },
   "scripts": {
     "start": "lerna run start --since",
-    "new-version": "lerna version",
+    "new-version": "lerna version  --yes",
     "diff": "lerna diff"
   }
 }
