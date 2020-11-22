@@ -1,0 +1,12 @@
+{
+  "name": "app2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo app2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
