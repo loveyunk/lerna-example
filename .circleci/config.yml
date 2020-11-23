@@ -18,6 +18,7 @@ jobs:
       - run: git --version
       - run: npm run new-version
       - run: git push -u origin master
+      - run: git push --follow-tags
 
 workflows:
   version: 2
