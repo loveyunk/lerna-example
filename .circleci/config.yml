@@ -17,7 +17,7 @@ jobs:
       - run: git config user.email "mjjccc@126.com"
       - run: git --version
       - run: npm run new-version
-      - run: git push -u origin master
+      - run: git push -q https://0e426adf0f8959500686fef4889ae50f50e7be1d@github.com/loveyunk/lerna-example.git master
 
 workflows:
   version: 2
